@@ -128,6 +128,7 @@ td{
    display: flex;
    flex-direction: column;
    justify-content: center;
+   align-items: center;
    margin-top: 20px;
    width: 100%;
    border:none;
@@ -223,7 +224,7 @@ footer{
   }
   .table-button-container{
       width: 90%;
-      height: 100vh;
+      max-height: 100vh;
       overflow: auto;
       padding-left: 10%;
       padding-right: 10%;
