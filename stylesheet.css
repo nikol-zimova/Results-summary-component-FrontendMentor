@@ -1,0 +1,235 @@
+body{
+   display: grid;
+   grid-template-rows: auto 1fr;
+   font-family: "Hanken Grotesk", sans-serif;
+   font-weight: 600;
+   font-style: normal;
+   font-size: 1em;
+   background-color: hsl(0, 0%, 100%);
+   margin: auto;
+   width: 100%;
+   height: 100vh;
+   max-width: 1420px;
+   overflow: hidden;
+}
+
+.cards {
+   display: flex;
+   flex-wrap: wrap;
+   background: linear-gradient(hsla(221, 100%, 96%, 0.6), hsla(224, 30%, 27%, 0.1));
+   border: none;
+   border-radius: 2.5em;
+   width: 45%;
+   margin: 5vw auto;
+} 
+
+.card-blue{
+   flex: 1 0 21%; 
+   border: none;
+   border-radius: 25px;
+   background: linear-gradient(hsl(252, 100%, 67%), hsl(241, 81%, 54%));
+   text-align: center;
+   padding: 1.5em;
+}
+
+ .title{
+    color: hsl(241, 100%, 89%);
+    font-size: 18px;
+ }
+ 
+ .section-circle{
+   border: none;
+   border-radius: 50%;
+   background: linear-gradient(hsla(256, 72%, 46%, 1), hsla(241, 72%, 46%, 0));
+   width: 10em; 
+   height: 10em; 
+   text-align: center;
+   margin: auto;
+}
+
+ .circle-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+ }
+ 
+ .result-avg {
+     color: hsl(0, 0%, 100%);
+     font-size: 55px;
+     margin-bottom: 0;
+     margin-top: 60px;
+ }
+ 
+ .max-points{
+    color: hsla(0, 0%, 100%,0.4);
+    font-size: 14px;
+    margin-bottom: 60px;
+ }
+
+ .rating{
+    color: hsl(0, 0%, 100%);
+    font-size: 25px;
+    margin-top: 20px;
+ }
+ 
+ .text-rating{
+    color: hsla(241, 100%, 89%, 0.8);
+    font-size: 16px;
+    line-height: 1.5;
+    margin-top: -30px;
+ }
+ 
+.table-button-container {
+   display: flex;
+   flex-direction: column;
+   justify-content: flex-start;
+   width: 40%; 
+   padding: 5%;
+}
+
+.summary-title {
+   display: flex;
+   font-size: 20px;
+   font-weight: 700;
+   color: hsla(224, 30%, 27%, 1);
+   padding-bottom: 10px;
+}
+
+table{
+   border-spacing: 0;
+   font-size: 16px;
+}
+
+.spacer{
+   height: 1vh; 
+}
+
+th{
+   display: flex;
+   align-items: start;
+   text-align: left;
+   padding: 15px 15px 15px 15px;
+   background-color: hsl(0, 0%, 100%);
+   border: none;
+   border-top-left-radius: 12px;
+   border-bottom-left-radius: 12px;
+}
+
+td{
+   text-align: center;
+   border: none;
+   background-color: hsl(0, 0%, 100%);
+   border-top-right-radius: 12px;
+   border-bottom-right-radius: 12px;
+}
+
+.button{
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   margin-top: 20px;
+   width: 100%;
+   border:none;
+   border-radius: 300px;
+   background-color: hsl(224, 30%, 27%);
+   height: 3em; 
+   font-family: "Hanken Grotesk", sans-serif;
+   color: hsla(0, 0%, 100%, 0.97);
+   font-size: 16px;
+   font-weight: bold;
+   cursor: pointer;
+}
+
+.button:hover {
+   background-color: hsla(224, 30%, 27%, 0.9);
+   color: hsl(0, 0%, 100%);
+}
+
+img{
+   display: block;
+   align-items: center;
+   margin-right: 10px;
+}
+
+.reaction{
+   color: hsl(0, 100%, 67%);
+}
+
+.memory{
+   color: hsl(39, 100%, 56%);
+}
+
+.verbal{
+   color: hsl(166, 100%, 37%);
+}
+
+.visual{
+   color: hsl(234, 85%, 45%);
+}
+
+.score{
+   color: hsla(224, 30%, 27%, 1);
+}
+
+.total{
+   color:  hsla(224, 30%, 27%, 0.6);
+}
+
+footer{
+   display: block;
+   width: 100%;
+   text-align: center;
+   font-size: 11px;
+   position: fixed;
+   bottom: 0;
+   padding-top: 2em;
+   padding-bottom: 2em;
+}
+
+ .attribution a {
+     color: hsl(228, 45%, 44%); 
+ }
+ 
+ @media (max-width: 375px) {
+   .cards {
+       flex-direction: column;
+       width: 100%;
+       margin: auto;
+       margin-top: -25px;
+   }
+   .card-blue {
+       flex-basis: 100%;
+   }
+   .table-button-container{
+       width: 90%;
+       height: 100vh;
+       overflow: auto;
+   }
+   footer{
+      padding-top: 0;
+   }
+}
+
+@media (min-width: 375px) and (max-width: 1024px) {
+   .cards {
+      flex-direction: column;
+      width: 60%;
+      margin: auto;
+      margin-top: 25px;
+  }
+  .card-blue {
+      flex-basis: 100%;
+  }
+  .table-button-container{
+      width: 90%;
+      height: 100vh;
+      overflow: auto;
+      padding-left: 10%;
+      padding-right: 10%;
+  }
+  footer{
+     padding-top: 0;
+  }
+}
