@@ -193,32 +193,42 @@ footer{
      color: hsl(228, 45%, 44%); 
  }
  
+
  @media (max-width: 375px) {
    .cards {
        flex-direction: column;
        width: 100%;
        margin: auto;
-       margin-top: -25px;
+       margin-top: -20px;
    }
    .card-blue {
        flex-basis: 100%;
+       margin: auto;
+       padding: 0.5em;
+
    }
    .table-button-container{
        width: 90%;
-       height: 100vh;
        overflow: auto;
+   }
+   table{
+      table-layout: auto;
+      width: 100%;
+   }
+   th, td{
+      padding: 2%;
    }
    footer{
       padding-top: 0;
    }
 }
 
-@media (min-width: 375px) and (max-width: 1024px) {
+@media (min-width: 376px) and (max-width: 900px) {
    .cards {
       flex-direction: column;
       width: 60%;
       margin: auto;
-      margin-top: 25px;
+      margin-top: -25px;
   }
   .card-blue {
       flex-basis: 100%;
@@ -226,11 +236,36 @@ footer{
   .table-button-container{
       width: 90%;
       max-height: 100vh;
-      overflow: auto;
-      padding-left: 10%;
-      padding-right: 10%;
+  }
+  table{
+   table-layout: auto;
+   width: 100%;
   }
   footer{
      padding-top: 0;
+  }
+}
+
+
+@media (orientation: landscape) and (max-width: 900px){
+   .cards {
+      flex-direction: column;
+      width: 60%;
+      margin: auto;
+      margin-top: -25px;
+  }
+  .card-blue {
+      flex-basis: 100%;
+  }
+  .table-button-container{
+      width: 90%;
+      max-height: 100vh;
+  }
+  table{
+   table-layout: auto;
+   width: 100%;
+  }
+  footer{
+     padding-top: 10px;
   }
 }
