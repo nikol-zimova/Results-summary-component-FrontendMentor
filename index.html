@@ -11,35 +11,33 @@
   <title>Frontend Mentor | Results summary component</title>
 </head>
 <body>
-  <article class="cards" aria-label="Result Summary Card">
-    <article class="card-blue" id="result-card">
-      <header class="title">
-        <h1>Your Result</h1>
-      </header>
-      <section class="section-circle">
-        <div class="circle-content">
-          <h2 class="result-avg"> </h2>
-          <div class="max-points">of 100</div>
+  <main role="main">
+    <section class="cards" aria-label="Result Summary Card">
+      <section class="card-blue" id="result-card">
+        <h1 class="title">Your Result</h1>
+        <figure class="section-circle">
+          <div class="circle-content">
+            <h2 class="result-avg"> </h2>
+            <figcaption class="max-points">of 100</figcaption>
+          </div>
+        </figure>   
+        <section class="section-rating">
+          <h4 class="rating">Great</h4>
+          <p class="text-rating"> You scored higher than 65% of the people who have taken these tests. </p>
+        </section>
+      </section>
+      <section class="table-button-container">
+        <h2 class="summary-title">Summary</h2>
+        <table class="results-details"></table>
+        <div class="button-container">
+          <button class="button" aria-label="Continue">Continue</button>
         </div>
       </section>   
-      <section class="section-rating">
-        <h4 class="rating">Great</h4>
-        <p class="text-rating"> You scored higher than 65% of the people who have taken these tests. </p>
-      </section>
-    </article>
-    <div class="table-button-container">
-      <header class="summary-title">Summary</header>
-      <table class="results-details"></table>
-      <div class="button-container">
-        <button class="button" aria-label="Continue">Continue</button>
-    </div>   
-  </article>
-  
-  <footer>
-    <div class="attribution">
+    </section>
+  </main>
+  <footer class="attribution">
       Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
       Coded by <a href="https://www.frontendmentor.io/profile/nikol-zimova">Nikol</a>.
-    </div>
   </footer>
   <script src="script.js"></script>
 </body>
