@@ -14,7 +14,7 @@ fetch('data.json')
                           <span class="total"> / 100</span>
                       </td>
                  </tr>
-                 <tr class="spacer"></tr>`;
+                 <tr class="spacer" aria-hidden="true"></tr>`;
       table.innerHTML += row;
       totalScore += data[i].score;
     }
@@ -22,3 +22,4 @@ fetch('data.json')
     document.querySelector('.result-avg').textContent = avgScore;
   })
   .catch(error => console.error('Error:', error));
+  document.querySelector('.error-message').textContent = 'An error occurred while fetching the results.';
