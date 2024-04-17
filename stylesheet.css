@@ -216,8 +216,9 @@ footer{
       width: 100%;
    }
    th, td{
-      padding: 2%;
+      padding: 0; 
    }
+
    footer{
       padding-top: 0;
    }
@@ -241,6 +242,7 @@ footer{
    table-layout: auto;
    width: 100%;
   }
+
   footer{
      padding-top: 0;
   }
@@ -262,8 +264,8 @@ footer{
       max-height: 100vh;
   }
   table{
-   table-layout: auto;
-   width: 100%;
+      table-layout: auto;
+      width: 100%;
   }
   footer{
      padding-top: 10px;
